@@ -1,4 +1,4 @@
-.control-checkbox {
+.switch {
   --bg-color: var(--secondary-color);
 
   position: relative;
@@ -6,8 +6,4 @@
   height: 30px;
   border-radius: 20px;
   background-color: var(--bg-color);
-}
-
-.control-checkbox > input {
-  visibility: hidden;
 }
