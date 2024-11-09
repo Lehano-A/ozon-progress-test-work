@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Poppins-Medium';
+  src:
+    local('Poppins-Medium'),
+    url('./Poppins-Medium.woff2') format('woff2'),
+    url('./Poppins-Medium.woff') format('woff');
+  font-weight: normal;
+}
