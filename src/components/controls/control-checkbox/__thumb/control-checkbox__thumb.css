@@ -1,0 +1,14 @@
+.control-checkbox__thumb {
+  --size-thumb: 26px;
+  --margin-side: 2px;
+
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  width: var(--size-thumb);
+  height: var(--size-thumb);
+  border-radius: 50%;
+  background-color: #fff;
+  transition: left 1s ease;
+}

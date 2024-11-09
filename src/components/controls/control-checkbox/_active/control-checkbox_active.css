@@ -1,0 +1,8 @@
+.control-checkbox_active {
+  --bg-color: var(--primary-color);
+}
+
+/* меняем положение thumb */
+.control-checkbox_active .control-checkbox__thumb {
+  left: calc(100% - var(--size-thumb) - var(--margin-side));
+}
