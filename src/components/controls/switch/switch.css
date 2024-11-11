@@ -1,9 +1,12 @@
 .switch {
   --bg-color: var(--secondary-color);
+  --switch-width: var(--control-width, 46px);
+  --switch-height: var(--control-height, 28px);
+  --size-thumb: calc(var(--switch-height) - 6px);
 
   position: relative;
-  width: 50px;
-  height: 30px;
-  border-radius: 20px;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  border-radius: 25px;
   background-color: var(--bg-color);
 }
