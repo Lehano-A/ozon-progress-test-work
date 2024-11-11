@@ -6,7 +6,7 @@ import pluginJs from "@eslint/js";
 export default [
   {
     languageOptions: { globals: globals.browser },
-    "ignorePatterns": ["webpack.config.js", "devServer.config"],
+    "ignores": ["webpack.config.js", "devServer.config"],
   },
   pluginJs.configs.recommended,
 ];
