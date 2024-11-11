@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Poppins-Medium';
+  font-family: "GTEestiProDisplay-Light";
   src:
-    local('Poppins-Medium'),
-    url('./Poppins-Medium.woff2') format('woff2'),
-    url('./Poppins-Medium.woff') format('woff');
+    local("GTEestiProDisplay-Light"),
+    url("./GTEestiProDisplay-Light.woff2") format("woff2"),
+    url("./GTEestiProDisplay-Light.woff") format("woff");
   font-weight: normal;
 }
