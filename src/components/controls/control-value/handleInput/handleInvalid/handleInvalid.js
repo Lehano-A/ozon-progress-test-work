@@ -2,11 +2,17 @@ import { checkForEmpty } from "./helpers/checkForEmpty";
 import { checkForZero } from "./helpers/checkForZero";
 import { checkForNaN } from "./helpers/checkForNaN";
 import { checkForZeroWithInt } from "./helpers/checkForZeroWithInt";
+import { getNumericValue } from "./helpers/getNumericValue";
 
 // обработать невалидное значение
 // output: [processedValue, valueForDisplay]
 function handleInvalid(inputValue) {
   const numberValue = Number(inputValue);
+
+  // если всё значение - пустая строка
+  if (checkForEmpty(inputValue)) {
+    return ["0", ""];
+  }
 
   // если значение - НЕчисло
   if (checkForNaN(numberValue)) {
@@ -17,7 +23,7 @@ function handleInvalid(inputValue) {
 
     // если последний введённый символ - невалиден (например: 45@)
     if (inputValue.length > 1) {
-      const prevValue = inputValue.substring(0, inputValue.length - 1); // то обрезаем невалидность и оставляем предыдущий ввод
+      const prevValue = getNumericValue(inputValue);
       return [prevValue, prevValue];
     }
   }
@@ -38,10 +44,9 @@ function handleInvalid(inputValue) {
     return ["0", ""];
   }
 
-  // если всё значение - пустая строка
-  if (checkForEmpty(inputValue)) {
-    return ["0", ""];
-  }
+  // в остальных случаях, например когда происходит ввод символов '-' или '.'
+  const prevValue = getNumericValue(inputValue);
+  return [prevValue, prevValue];
 }
 
 export { handleInvalid };
