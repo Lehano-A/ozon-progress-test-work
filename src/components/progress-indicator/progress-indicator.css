@@ -1,0 +1,24 @@
+.progress-indicator {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--primary-color) 75%,
+    var(--secondary-color) 0
+  );
+}
+
+/* внутренний заполнитель (круг) */
+.progress-indicator::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 112px;
+  height: 112px;
+  background-color: white;
+  border-radius: 50%;
+}
