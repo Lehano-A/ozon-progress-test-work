@@ -1,0 +1,6 @@
+.progress__controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 106px;
+  gap: 14px;
+}

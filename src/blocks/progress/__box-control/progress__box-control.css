@@ -1,0 +1,11 @@
+.progress__box-control {
+  position: relative;
+  right: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.progress__box-control > :first-child {
+  margin-right: 25px;
+}

@@ -1,0 +1,10 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  min-height: 600px;
+  width: 100%;
+  font-weight: bold;
+  margin: 0 auto;
+}

@@ -1,0 +1,6 @@
+.progress__title {
+  align-self: flex-start;
+  font-size: 1.8rem;
+  margin: 5px 0 72px 0;
+  letter-spacing: 0.5px;
+}
