@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #005cff;
+  --secondary-color: #eaf0f6;
+  --text-color: #1c1c1c;
+  --placeholder-color: #dfdfdf;
+
+  --control-width: 50px;
+  --control-height: 32px;
+}

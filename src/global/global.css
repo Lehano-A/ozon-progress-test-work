@@ -1,0 +1,17 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "GTEestiProDisplay-Light", Arial, Helvetica, Calibri, sans-serif;
+  color: var(--text-color);
+  margin: 20px;
+}
+
+h1 {
+  margin: 0;
+}
