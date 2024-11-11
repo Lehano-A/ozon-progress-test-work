@@ -1,7 +1,10 @@
+import { executeAction } from "./actions/executeAction";
+
 const switches = document.querySelectorAll(".switch");
 
 for (let el of switches) {
   const label = el.previousElementSibling || el.nextElementSibling;
+
   const handle = handlerInteraction(el);
 
   el.addEventListener("click", handle); // активация переключателя через его нажатие
@@ -24,10 +27,11 @@ function handlerInteraction(control) {
       delay = 400; // задержка перед следующим нажатием (равна задержке анимации)
 
       control.classList.toggle("switch_active");
-      control.setAttribute(
-        "aria-checked",
-        control.classList.contains("switch_active"),
-      );
+
+      const currentState = control.classList.contains("switch_active");
+      control.setAttribute("aria-checked", currentState);
+
+      executeAction(control.id, currentState);
 
       setTimeout(() => {
         delay = 0;

@@ -1,4 +1,5 @@
 import { regexNumericRange } from "../../../../constants";
+import { changeValueProgress } from "../../../progress-indicator/api/changeValueProgress";
 import { paramsProgress } from "../../../progress-indicator/progressIndicator";
 import { handleInvalid } from "./handleInvalid/handleInvalid";
 
@@ -13,13 +14,16 @@ function handleInput(e) {
 
     paramsProgress.value = processedValue;
     e.target.value = valueForDisplay;
+    changeValueProgress(processedValue);
     return;
   }
 
   // если ввод - валиден
   if (isValid) {
     e.target.value = inputValue; // назначаем введённое значение, но без пробелов (если они есть)
+
     paramsProgress.value = inputValue;
+    changeValueProgress(inputValue);
     return;
   }
 }

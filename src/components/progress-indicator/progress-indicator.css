@@ -3,8 +3,9 @@
   width: 136px;
   height: 136px;
   border-radius: 50%;
+  /*--current-progress инициализируется через js и изменяется при изменении значения в control-value */
   background: conic-gradient(
-    var(--primary-color) 75%,
+    var(--primary-color) calc(var(--current-progress, 15) * 1%),
     var(--secondary-color) 0
   );
 }
