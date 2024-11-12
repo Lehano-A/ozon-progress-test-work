@@ -1,6 +1,18 @@
 .progress__controls {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 106px;
   gap: 14px;
+}
+
+@media (orientation: portrait) {
+  .progress__controls {
+    right: 3px;
+  }
+}
+
+@media (orientation: landscape) {
+  .progress__controls {
+    right: 10px;
+  }
 }

@@ -2,9 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 320px;
-  min-height: 600px;
-  width: 100%;
   font-weight: bold;
-  margin: 0 auto;
+}
+
+@media (orientation: portrait) {
+  .progress {
+    max-width: 320px;
+    width: 100%;
+    height: 568px;
+  }
+}
+
+@media (orientation: landscape) {
+  .progress {
+    max-width: none;
+    width: 568px;
+    height: 320px;
+  }
 }

@@ -1,6 +1,18 @@
 .progress__title {
   align-self: flex-start;
   font-size: 1.8rem;
-  margin: 5px 0 72px 0;
+  margin: 5px 0 0 0;
   letter-spacing: 0.5px;
+}
+
+@media (orientation: portrait) {
+  .progress__title {
+    margin-bottom: 72px;
+  }
+}
+
+@media (orientation: landscape) {
+  .progress__title {
+    margin-bottom: 64px;
+  }
 }

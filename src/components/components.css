@@ -1,4 +1,6 @@
 @import url("./progress-indicator/progress-indicator.css");
+@import url("./progress-indicator/_rotate/progress-indicator_animation-rotate.css");
+@import url("./progress-indicator/_hiding/progress-indicator_hiding.css");
 
 @import url("./controls/control-value/control-value.css");
 

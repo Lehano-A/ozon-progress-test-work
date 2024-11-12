@@ -9,4 +9,5 @@
   height: var(--switch-height);
   border-radius: 25px;
   background-color: var(--bg-color);
+  cursor: pointer;
 }

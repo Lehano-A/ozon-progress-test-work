@@ -1,7 +1,11 @@
 .progress-indicator {
+  --container-size: 136px;
+  --arc-size: calc(var(--container-size) - 24px);
+
   position: relative;
-  width: 136px;
-  height: 136px;
+  width: var(--container-size);
+  height: var(--container-size);
+  flex-shrink: 0;
   border-radius: 50%;
   /*--current-progress инициализируется через js и изменяется при изменении значения в control-value */
   background: conic-gradient(
@@ -18,8 +22,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 112px;
-  height: 112px;
+  width: var(--arc-size);
+  height: var(--arc-size);
   background-color: white;
   border-radius: 50%;
 }
