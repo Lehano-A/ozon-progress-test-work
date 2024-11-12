@@ -519,6 +519,11 @@ h1 {
 }
 
 
+.progress__box-control_align-baseline > label {
+  display: inline-block;
+  height: 100%;
+}
+
 
 .progress-indicator {
   --container-size: 136px;
@@ -583,11 +588,6 @@ h1 {
 .control-value::placeholder {
   font-weight: normal;
   color: var(--placeholder-color);
-}
-
-.control-value::before {
-  content: 'test';
-  display: inline-block;
 }
 
 .switch {
