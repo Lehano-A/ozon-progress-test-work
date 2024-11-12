@@ -1,4 +1,5 @@
 @import url("./progress/progress.css");
+@import url("./progress/__wrapper/progress__wrapper.css");
 @import url("./progress/__title/progress__title.css");
 @import url("./progress/__controls/progress__controls.css");
 @import url("./progress/__box-control/progress__box-control.css");
