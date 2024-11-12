@@ -1,8 +1,10 @@
-import { progressIndicator } from "../progressIndicator";
+import { setAria } from "../helpers/setAttribute";
+import { setProperty } from "../helpers/setPropertyStyle";
 
 // изменить значение индикатора прогресса
 function changeValueProgress(value) {
-  progressIndicator.style.setProperty("--current-progress", value);
+  setAria.valueNow(value);
+  setProperty.variable("--current-progress", value);
 }
 
 export { changeValueProgress };
