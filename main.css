@@ -379,15 +379,20 @@ body {
   --margin: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: "GTEestiProDisplay-Light", Arial, Helvetica, Calibri, sans-serif;
   color: var(--text-color);
   height: calc(100vh - var(--margin) * 2);
-  margin: 20px;
+  margin: var(--margin);
 }
 
 h1 {
   margin: 0;
+}
+
+@media (orientation: landscape) {
+  body {
+    align-items: center;
+  }
 }
 
 .progress {
