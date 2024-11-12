@@ -585,6 +585,11 @@ h1 {
   color: var(--placeholder-color);
 }
 
+.control-value::before {
+  content: 'test';
+  display: inline-block;
+}
+
 .switch {
   --bg-color: var(--secondary-color);
   --switch-width: var(--control-width, 46px);
