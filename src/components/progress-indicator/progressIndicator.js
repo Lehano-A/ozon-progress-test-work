@@ -1,7 +1,7 @@
 const progressIndicator = document.querySelector(".progress-indicator");
 const controlValue = document.querySelector(".control-value");
 
-const paramsProgress = { value: "71" };
+const paramsProgress = { value: "75" };
 
 controlValue.value = paramsProgress.value; // присваиваем начальное значение
 
