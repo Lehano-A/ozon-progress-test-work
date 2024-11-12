@@ -514,15 +514,6 @@ h1 {
   }
 }
 
-.progress__box-control_align-baseline {
-  align-items: baseline;
-}
-
-
-.progress__box-control_align-baseline > label {
-  display: inline-block;
-  height: 100%;
-}
 
 
 .progress-indicator {
@@ -632,6 +623,10 @@ h1 {
   letter-spacing: 0.4px;
   line-height: 1.21;
   cursor: pointer;
+}
+
+.label-control_offset {
+  padding-top: 3px;
 }
 
 
