@@ -1,27 +1,20 @@
-:root {
+.progress-root {
   font-size: 10px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+.progress-root > body {
   --margin: 20px;
+
   display: flex;
   justify-content: center;
   font-family: "GTEestiProDisplay-Light", Arial, Helvetica, Calibri, sans-serif;
-  color: var(--text-color);
   height: calc(100vh - var(--margin) * 2);
+  color: var(--text-color);
   margin: var(--margin);
 }
 
-h1 {
-  margin: 0;
-}
-
 @media (orientation: landscape) {
-  body {
+  .progress-root > body {
     align-items: center;
   }
 }
