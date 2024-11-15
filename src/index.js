@@ -1,5 +1,5 @@
 import "../index.css";
 
-import "./components/progress-indicator/progressIndicator";
-import "./components/controls/switch/switch";
-import "./components/controls/control-value/controlValue";
+import "./blocks/progress-indicator/progressIndicator";
+import "./blocks/controls/switch/switch";
+import "./blocks/controls/control-value/controlValue";
