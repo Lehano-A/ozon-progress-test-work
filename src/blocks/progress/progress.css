@@ -7,6 +7,11 @@
   font-weight: bold;
 }
 
+.progress,
+.progress > * {
+  box-sizing: border-box;
+}
+
 @media (orientation: portrait) {
   .progress {
     max-width: 320px;
