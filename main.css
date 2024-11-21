@@ -367,30 +367,23 @@ template {
   --control-height: 32px;
 }
 
-:root {
+.progress-root {
   font-size: 10px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+.progress-root > body {
   --margin: 20px;
+
   display: flex;
   justify-content: center;
   font-family: "GTEestiProDisplay-Light", Arial, Helvetica, Calibri, sans-serif;
-  color: var(--text-color);
   height: calc(100vh - var(--margin) * 2);
+  color: var(--text-color);
   margin: var(--margin);
 }
 
-h1 {
-  margin: 0;
-}
-
 @media (orientation: landscape) {
-  body {
+  .progress-root > body {
     align-items: center;
   }
 }
@@ -404,6 +397,11 @@ h1 {
   font-weight: bold;
 }
 
+.progress,
+.progress > * {
+  box-sizing: border-box;
+}
+
 @media (orientation: portrait) {
   .progress {
     max-width: 320px;
@@ -415,43 +413,6 @@ h1 {
   .progress {
     max-width: 568px;
     max-height: 320px;
-  }
-}
-
-.progress__wrapper {
-  --margin-side-children: 53px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-@media (orientation: portrait) {
-  .progress__wrapper > .progress-indicator {
-    margin: 0 0 var(--margin-side-children) 0;
-  }
-
-  .progress__wrapper > .progress__controls {
-    margin: var(--margin-side-children) 0 0 0;
-  }
-}
-
-@media (orientation: landscape) {
-  .progress__wrapper {
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-    height: auto;
-  }
-
-  .progress__wrapper > .progress-indicator {
-    margin: 0 var(--margin-side-children) 0 0;
-  }
-
-  .progress__wrapper > .progress__controls {
-    margin: 0 0 0 var(--margin-side-children);
   }
 }
 
@@ -514,7 +475,42 @@ h1 {
   }
 }
 
+.progress__control-panel {
+  --margin-side-children: 53px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (orientation: portrait) {
+  .progress__control-panel > .progress-indicator {
+    margin: 0 0 var(--margin-side-children) 0;
+  }
+
+  .progress__control-panel > .progress__controls {
+    margin: var(--margin-side-children) 0 0 0;
+  }
+}
+
+@media (orientation: landscape) {
+  .progress__control-panel {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    height: auto;
+  }
+
+  .progress__control-panel > .progress-indicator {
+    margin: 0 var(--margin-side-children) 0 0;
+  }
+
+  .progress__control-panel > .progress__controls {
+    margin: 0 0 0 var(--margin-side-children);
+  }
+}
 
 .progress-indicator {
   --container-size: 136px;
